@@ -12,7 +12,7 @@ Simply put, one is likely to arrive at certain websites more often than others i
 
 In code:
 
-```
+```python
 def sample_pagerank(corpus, damping_factor, n):
 
     page_rank = {name: 0 for name in corpus}
@@ -33,7 +33,7 @@ def sample_pagerank(corpus, damping_factor, n):
 
 The transition_model function returns a probability distribution for how likely the user is to click on each given link. Here’s that function:
 
-```
+```python
 def transition_model(corpus, page, damping_factor):
 
     pages = corpus[page]

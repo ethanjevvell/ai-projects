@@ -4,7 +4,7 @@ The program represents each character's role (Knight or Knave) using proposition
 
 For example, in Puzzle 1, the following knowledge base is constructed:
 
-```
+```python
 knowledge1 = And(
 Or(AKnight, AKnave),
 Not(And(AKnight, AKnave)),

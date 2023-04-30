@@ -145,6 +145,13 @@ main {
   transform: translateY(-5px);
 }
 
+.markdown-content > p {
+  margin-bottom: 0.5em; /* Adjust this value to control the spacing between paragraphs */
+  margin-top: 0.5em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 @media (max-width: 600px) {
   .section {
     margin-top: 4em;

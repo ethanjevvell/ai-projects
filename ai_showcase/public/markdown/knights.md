@@ -1,3 +1,5 @@
+# Knights
+
 This program is a logic-based puzzle solver that utilizes knowledge bases and propositional logic to deduce the truth values of symbols representing the roles of different characters. Knowledge bases are a fundamental concept in artificial intelligence, representing a collection of statements that an agent knows to be true. In this program, we use knowledge bases to encode information about the characters and their statements as logical expressions.
 
 The program represents each character's role (Knight or Knave) using propositional symbols, such as AKnight and AKnave for character A. These symbols are then combined using logical connectives (such as And, Or, and Not) to form complex logical expressions. The knowledge base for each puzzle is built by encoding the rules of the game, the statements made by the characters, and any additional information provided.

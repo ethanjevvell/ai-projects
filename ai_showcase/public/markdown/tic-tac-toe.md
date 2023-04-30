@@ -4,15 +4,7 @@ This Python program implements a Tic Tac Toe player that uses the Minimax algori
 
 ## Minimax Algorithm
 
-The Minimax algorithm is a recursive decision-making algorithm that evaluates the best possible move for a player in a zero-sum game (such as Tic Tac Toe). It assumes that both players play optimally and aims to minimize the potential loss for the worst-case scenario. The Minimax algorithm can be represented by the following equations:
-
-$$
-maxValue(state) = \max_{a \in actions(state)} minValue(result(state, a))
-$$
-
-$$
-minValue(state) = \min_{a \in actions(state)} maxValue(result(state, a))
-$$
+The Minimax algorithm is a recursive decision-making algorithm that evaluates the best possible move for a player in a zero-sum game (such as Tic Tac Toe). It assumes that both players play optimally and aims to minimize the potential loss for the worst-case scenario.
 
 The `maxValue()` function evaluates the maximum utility for player X, while the `minValue()` function evaluates the minimum utility for player O. The algorithm recursively explores the game tree, alternating between maximizing and minimizing player turns until terminal states are reached.
 

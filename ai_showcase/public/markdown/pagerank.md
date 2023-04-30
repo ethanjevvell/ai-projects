@@ -6,7 +6,11 @@ There are two approaches that CS50 asks students to implement: the “Random Sur
 
 The Random Surfer approach asks the following: How likely is a user to be on a given webpage at any moment in time? The intuitive answer is that a user is more likely to be on a website if it is often linked to by other sites. By clicking through sites link-by-link (where each link is chosen with equal probability as all other links on a given site), and counting how many times one arrives at each site in the corpus, we can approximate each site’s pagerank based on the proportion of times it appeared in our samples. Mathematically:
 
-$$PR(p_i) = \frac{1-d}{N} + d \sum_{p_j \in L(p_i)} \frac{PR(p_j)}{C(p_j)} + \frac{d}{N}$$
+.
+
+$$ PR(p*i) = \frac{1-d}{N} + d \sum*{p_j \in L(p_i)} \frac{PR(p_j)}{C(p_j)} + \frac{d}{N} $$
+
+.
 
 Simply put, one is likely to arrive at certain websites more often than others if links are “surfed” through randomly.
 

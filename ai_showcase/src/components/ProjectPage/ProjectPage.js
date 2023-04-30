@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import React, { useState, useEffect } from "react";
 import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
 
 export default function ProjectPage() {
@@ -30,7 +31,11 @@ export default function ProjectPage() {
 
   return (
     <div id="project-page-main-container">
-      <ReactMarkdown rehypePlugins={[rehypeKatex]} children={markdownContent} />
+      <ReactMarkdown
+        rehypePlugins={[rehypeKatex]}
+        remarkPlugins={[remarkMath]}
+        children={markdownContent}
+      />
       <Projects />
     </div>
   );

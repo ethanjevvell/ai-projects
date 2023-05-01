@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
@@ -12,10 +12,19 @@ import "./App.css";
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
   const location = useLocation();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsMounted(false);
   }, [location]);
+
+  useEffect(() => {
+    if (isMounted) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      setIsMounted(true);
+    }
+  }, [isMounted]);
 
   return (
     <div id="top" className={`${themeName} app`}>

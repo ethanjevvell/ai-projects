@@ -1,4 +1,4 @@
-## Crossword Puzzle Solver: Key Insights
+# Crossword Puzzle Solver
 
 This crossword puzzle solver is an excellent example of a program that models and solves a constraint satisfaction problem (CSP) using object-oriented programming. The project highlights several key insights and lessons that can be useful for similar applications and future improvements:
 

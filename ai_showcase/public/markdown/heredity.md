@@ -1,4 +1,4 @@
-## Heredity Probability Model: Key Insights
+# Heredity Probability Model
 
 This heredity probability model calculates the probability of inheriting certain genetic traits using a dataset of family trees.
 

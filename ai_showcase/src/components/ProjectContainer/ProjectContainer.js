@@ -3,7 +3,9 @@ import { GitHub, Launch } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./ProjectContainer.css";
 
-const ProjectContainer = ({ project }) => (
+const ProjectContainer = ({ project }) => {
+
+  return (
   <Link to={`/project/${project.codeName}`}>
     <div className="project">
       <h3>{project.name}</h3>
@@ -32,6 +34,7 @@ const ProjectContainer = ({ project }) => (
       )}
     </div>
   </Link>
-);
+  )
+      };
 
 export default ProjectContainer;

@@ -1,16 +1,21 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Footer from "./components/Footer/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage/ProjectPage";
 
 import "./App.css";
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location]);
 
   return (
     <div id="top" className={`${themeName} app`}>

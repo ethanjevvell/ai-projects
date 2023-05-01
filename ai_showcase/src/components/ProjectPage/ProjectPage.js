@@ -8,6 +8,8 @@ import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coldarkDark, coldarkCold } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Button from "@mui/material/Button"
+import {Link} from "react-router-dom";
 
 export default function ProjectPage() {
   const { projectName } = useParams();
@@ -42,6 +44,9 @@ export default function ProjectPage() {
 
   return (
     <div id="project-page-main-container">
+      <Link to="/">
+        <Button variant="outlined">Return to Projects</Button>
+      </Link>
       <div className="markdown-content">
         <ReactMarkdown
           rehypePlugins={[rehypeKatex]}

@@ -1,3 +1,5 @@
+# PageRank
+
 The challenge for this project was to find the “pagerank” for each page in a corpus of websites. In short, the pagerank for a website is a proxy for how important that page is, based on how many other websites link to that website. (If you’re curious, Larry Page and Sergey Brin invented the algorithm that accomplishes this in 1996, and it formed the basis of Google’s search functionality for a while).
 
 There are two approaches that CS50 asks students to implement: the “Random Surfer” and “iterative” algorithms.
@@ -6,11 +8,7 @@ There are two approaches that CS50 asks students to implement: the “Random Sur
 
 The Random Surfer approach asks the following: How likely is a user to be on a given webpage at any moment in time? The intuitive answer is that a user is more likely to be on a website if it is often linked to by other sites. By clicking through sites link-by-link (where each link is chosen with equal probability as all other links on a given site), and counting how many times one arrives at each site in the corpus, we can approximate each site’s pagerank based on the proportion of times it appeared in our samples. Mathematically:
 
-.
-
-$$ PR(p*i) = \frac{1-d}{N} + d \sum*{p_j \in L(p_i)} \frac{PR(p_j)}{C(p_j)} + \frac{d}{N} $$
-
-.
+![Image not loaded properly](../equations/pagerank_randomsurfer.png)
 
 Simply put, one is likely to arrive at certain websites more often than others if links are “surfed” through randomly.
 
@@ -76,7 +74,7 @@ We know that there are two ways one ends up on a webpage: 1) they clicked on a l
 
 Thus, the probability one ends up on a site could be the odds of the random case and the sum of the pageranks of all sites that link to our given page. Mathematically:
 
-$$PR(p_i) = \frac{1-d}{N} + d \sum_{p_j \in M(p_i)} \frac{PR(p_j)}{L(p_j)}$$
+![Image not loaded properly](../equations/pagerank_iterative.png)
 
 The first term represents the case that the user randomly selects our page p. The second term represents the sum of the pageranks of all pages i that link to page p, where each of pageranks for page i are divided by the number of links on page i. Finally, multiply that sum by our damping factor and add it to the first term to get the pagerank of i.
 

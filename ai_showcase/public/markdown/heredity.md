@@ -16,9 +16,7 @@ The heredity probability model also incorporates the concept of Bayesian network
 
 The program calculates joint probabilities using the chain rule of probability:
 
-$$
-P(G_1, G_2, ..., G_n, T_1, T_2, ..., T_n) = \prod_{i=1}^n P(G_i|Parents(G_i)) \times P(T_i|G_i)
-$$
+![Image not loaded properly](../equations/chainrule.png)
 
 Where $G_i$ represents the number of genes a person $i$ has, $Parents(G_i)$ represents the gene information of the person's parents, and $T_i$ represents the
 

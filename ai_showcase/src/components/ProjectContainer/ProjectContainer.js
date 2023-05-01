@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./ProjectContainer.css";
 
 const ProjectContainer = ({ project }) => (
-  <Link to={`/project/${project.name}`}>
+  <Link to={`/project/${project.codeName}`}>
     <div className="project">
       <h3>{project.name}</h3>
 

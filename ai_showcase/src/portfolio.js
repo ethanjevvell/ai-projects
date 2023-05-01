@@ -20,88 +20,100 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: "Degrees",
+    name: "Advanced Breadth-First Search",
     description: "Apply breadth-first search to find the shortest path is large data structures",
     stack: ["Python", "BFS", "Search Trees"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/degrees",
     livePreview: "TO-DO",
+    codeName: "degrees"
   },
   {
-    name: "Tic-Tac-Toe",
+    name: "Applied Minimax",
     description: "Use minimax search to create a Tic-Tac-Toe AI",
     stack: ["Python", "Minimax", "Alpha-Beta Pruning"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/tictactoe",
     livePreview: "TO-DO",
+    codeName: "tic-tac-toe"
   },
   {
-    name: "Knights",
+    name: "Knowledge Bases",
     description: "Solve logical puzzles with knowledge bases",
     stack: ["Python", "Knowledge Bases", "Model Checking"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/knights",
     livePreview: "https://github.com",
+    codeName: "knights",
   },
   {
-    name: "Minesweeper",
+    name: "Inference",
     description: "Create Minesweeper AI with knowledge base and inference capabilities",
     stack: ["Python", "Knowledge Bases", "Model Checking"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/minesweeper",
     livePreview: "https://github.com",
+    codeName: "minesweeper"
   },
   {
-    name: "PageRank",
+    name: "Markov Chains",
     description: "Use Markov Chains to create Google-like page ranking AI",
     stack: ["Markov Chains", "Python", "Random Surfer"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/pagerank",
     livePreview: "https://github.com",
+    codeName: "pagerank"
   },
   {
-    name: "Heredity",
+    name: "Bayesian Networks",
     description: "Apply Bayesian Networks to estimate prevelance of target genes in population",
     stack: ["Python", "Bayesian Network", "Probability"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/heredity",
     livePreview: "https://github.com",
+    codeName: "heredity"
   },
   {
-    name: "Crossword",
+    name: "Constraint Satisfaction",
     description: "Use constraint satisfaction logic to generate crossword puzzles",
     stack: ["Constraint Satisfaction", "Arc Consistency", "Python"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/crossword",
     livePreview: "https://github.com",
+    codeName: "crossword"
   },
   {
-    name: "Shopping",
+    name: "Classification",
     description: "Predict which shopppers will purchase merchandise",
     stack: ["Perceptron Learning", "K-nearest neighbor", "Python"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/shopping",
     livePreview: "https://github.com",
+    codeName: "shopping"
   },
   {
-    name: "Nim",
+    name: "Q-Learning",
     description: "Train an AI with Q-learning to master Nim",
     stack: ["Q-learning", "Python"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/nim",
     livePreview: "https://github.com",
+    codeName: "nim"
   },
   {
-    name: "Traffic",
+    name: "Neural Networks",
     description: "Train a convolutional neural network to recognize German street signs",
     stack: ["Neural Networks", "Convolution", "Pooling"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/traffic",
     livePreview: "https://github.com",
+    codeName: "traffic"
   },
   {
-    name: "Parser",
+    name: "Natural Language Parsing",
     description: "Develop context-free grammar to parse sentence structure and noun-chunks",
     stack: ["NLP", "Context-free Grammar"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/parser",
     livePreview: "https://github.com",
+    codeName: "parser"
   },
   {
-    name: "Questions",
+    name: "Information Retrieval",
     description: "Train an AI to perform information retrieval with tf-idf",
     stack: ["Information Retrieval", "TF-IDF", "Tokenization"],
     sourceCode: "https://github.com/ethanjevvell/ai50/tree/master/questions",
     livePreview: "https://github.com",
+    codeName: "questions"
   },
 ];
 

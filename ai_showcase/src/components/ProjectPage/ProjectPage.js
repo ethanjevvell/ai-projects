@@ -13,6 +13,15 @@ export default function ProjectPage() {
   const { projectName } = useParams();
   const [markdownContent, setMarkdownContent] = useState("");
 
+  const renderers = {
+    // Ensures equations will be centered horizontally
+    img: ({ src, alt }) => (
+      <figure style={{ display: 'inline-block', textAlign: 'center', width: '100%' }}>
+        <img src={src} alt={alt} style={{ display: 'inline', marginTop: '0.5rem' }} />
+      </figure>
+    ),
+  };
+
   useEffect(() => {
     const fetchMarkdownContent = async () => {
       try {
@@ -39,6 +48,7 @@ export default function ProjectPage() {
           remarkPlugins={[remarkMath]}
           children={markdownContent}
           components={{
+            ...renderers,
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
               const language = match ? match[1] : "python";

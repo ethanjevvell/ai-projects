@@ -10,14 +10,6 @@ Convolutional Neural Networks (CNNs) are a class of deep learning models designe
 
 Convolution is a mathematical operation that combines two functions (in this case, an image and a kernel) to produce a third function that represents how the shape of one is modified by the other. In the context of image processing, convolution helps to detect features such as edges, corners, and textures.
 
-The convolution operation can be represented as:
-
-$$
-S(i, j) = (I * K)(i, j) = \sum_{m}\sum_{n}I(i-m, j-n)K(m, n)
-$$
-
-where $S$ is the output feature map, $I$ is the input image, and $K$ is the kernel.
-
 ### Pooling
 
 Pooling is a downsampling operation that reduces the spatial dimensions of the feature maps. Pooling layers are used to reduce the number of parameters and computations in the network and to provide some degree of translation invariance. The most common types of pooling are max pooling and average pooling.
@@ -36,4 +28,4 @@ The CNN model in this program can be tweaked by changing several parameters that
 8. **Batch size**: The batch size affects the number of samples used for each update during training. Larger batch sizes can lead to faster convergence but may require more memory and computational resources.
 9. **Learning rate**: The learning rate is a hyperparameter that controls the step size used to update the model's weights during optimization. Adjusting the learning rate can affect the model's convergence speed and final performance.
 
-In conclusion, this program demonstrates the use of a Convolutional Neural Network for traffic sign recognition. By tweaking various parameters and experimenting with different model architectures, it is
+My model achieved around 97% accuracy. One future project idea is to programmatically generate several hundred networks and graph their performance to help determine what parameters give the most bang for your buck.

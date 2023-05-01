@@ -10,9 +10,7 @@ The KNN algorithm is a simple and effective supervised machine learning techniqu
 
 Perceptron learning is a related linear classification algorithm that iteratively updates its weights by learning from the training data. The update rule for the weights is as follows:
 
-$$
-w_{t+1} = w_t + \eta (y_t - \hat{y_t}) x_t
-$$
+![Image not loaded properly](../equations/perceptronlearning.png)
 
 where $w_t$ is the weight vector at time $t$, $\eta$ is the learning rate, $y_t$ is the true label, $\hat{y_t}$ is the predicted label, and $x_t$ is the input feature vector.
 

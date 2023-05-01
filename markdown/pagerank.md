@@ -8,7 +8,7 @@ There are two approaches that CS50 asks students to implement: the “Random Sur
 
 The Random Surfer approach asks the following: How likely is a user to be on a given webpage at any moment in time? The intuitive answer is that a user is more likely to be on a website if it is often linked to by other sites. By clicking through sites link-by-link (where each link is chosen with equal probability as all other links on a given site), and counting how many times one arrives at each site in the corpus, we can approximate each site’s pagerank based on the proportion of times it appeared in our samples. Mathematically:
 
-![Image not loaded properly](../equations/pagerank_randomsurfer.png)
+![Image not loaded properly](/equations/pagerank_randomsurfer.png)
 
 Simply put, one is likely to arrive at certain websites more often than others if links are “surfed” through randomly.
 
@@ -74,7 +74,7 @@ We know that there are two ways one ends up on a webpage: 1) they clicked on a l
 
 Thus, the probability one ends up on a site could be the odds of the random case and the sum of the pageranks of all sites that link to our given page. Mathematically:
 
-![Image not loaded properly](../equations/pagerank_iterative.png)
+![Image not loaded properly](/equations/pagerank_iterative.png)
 
 The first term represents the case that the user randomly selects our page p. The second term represents the sum of the pageranks of all pages i that link to page p, where each of pageranks for page i are divided by the number of links on page i. Finally, multiply that sum by our damping factor and add it to the first term to get the pagerank of i.
 
